@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us | VASTU PARIWAR</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind Configuration -->
+  <link rel="stylesheet" href="../css/style.css" />
+  <script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                "secondary-fixed": "#ffe088",
+                "on-tertiary-fixed-variant": "#005316",
+                "secondary": "#735c00",
+                "surface-container-high": "#eae8e7",
+                "error": "#ba1a1a",
+                "on-secondary": "#ffffff",
+                "on-secondary-fixed": "#241a00",
+                "tertiary-container": "#69c56c",
+                "surface-container-low": "#f6f3f2",
+                "surface": "#fbf9f8",
+                "on-surface-variant": "#554336",
+                "inverse-surface": "#303030",
+                "on-error": "#ffffff",
+                "surface-container-highest": "#e4e2e1",
+                "surface-container-lowest": "#ffffff",
+                "tertiary-fixed": "#99f899",
+                "error-container": "#ffdad6",
+                "inverse-on-surface": "#f3f0f0",
+                "on-tertiary-fixed": "#002105",
+                "on-error-container": "#93000a",
+                "on-secondary-container": "#745c00",
+                "outline": "#887364",
+                "surface-variant": "#e4e2e1",
+                "surface-tint": "#8f4e00",
+                "on-background": "#1b1c1c",
+                "on-primary": "#ffffff",
+                "primary-container": "#ff9933",
+                "primary": "#8f4e00",
+                "on-surface": "#1b1c1c",
+                "outline-variant": "#dbc2b0",
+                "on-tertiary-container": "#005015",
+                "primary-fixed-dim": "#ffb77a",
+                "tertiary-fixed-dim": "#7edb7f",
+                "primary-fixed": "#ffdcc2",
+                "surface-dim": "#dcd9d9",
+                "on-primary-fixed": "#2e1500",
+                "surface-container": "#f0eded",
+                "surface-bright": "#fbf9f8",
+                "secondary-fixed-dim": "#e9c349",
+                "inverse-primary": "#ffb77a",
+                "on-secondary-fixed-variant": "#574500",
+                "on-primary-container": "#693800",
+                "secondary-container": "#fed65b",
+                "tertiary": "#016e21",
+                "background": "#fbf9f8",
+                "on-tertiary": "#ffffff",
+                "on-primary-fixed-variant": "#6d3a00"
+              },
+              "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+              },
+              "spacing": {
+                "container-max": "1200px",
+                "margin-mobile": "20px",
+                "stack-md": "32px",
+                "gutter": "24px",
+                "stack-sm": "16px",
+                "stack-lg": "64px",
+                "base": "8px"
+              },
+              "fontFamily": {
+                "headline-md": ["EB Garamond", "serif"],
+                "headline-lg-mobile": ["EB Garamond", "serif"],
+                "body-lg": ["Plus Jakarta Sans", "sans-serif"],
+                "headline-xl": ["EB Garamond", "serif"],
+                "body-md": ["Plus Jakarta Sans", "sans-serif"],
+                "label-md": ["Plus Jakarta Sans", "sans-serif"],
+                "headline-lg": ["EB Garamond", "serif"]
+              },
+              "fontSize": {
+                "headline-md": ["28px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                "headline-xl": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                "headline-lg": ["36px", {"lineHeight": "1.2", "fontWeight": "600"}]
+              }
+            },
+          },
+        }
+      </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .sunlight-shadow {
+            box-shadow: 0px 4px 20px rgba(51, 51, 51, 0.05);
+        }
+        .sunlight-shadow-hover:hover {
+            box-shadow: 0px 12px 32px rgba(212, 175, 55, 0.12);
+        }
+        .glass-nav {
+            background: rgba(251, 249, 248, 0.8);
+            backdrop-filter: blur(12px);
+        }
+        .compass-line {
+            background: linear-gradient(to bottom, transparent, #D4AF37, transparent);
+            width: 1px;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-8px); }
+            100% { transform: translateY(0px); }
+        }
+        .float-animation {
+            animation: float 4s ease-in-out infinite;
+        }
+        .reveal-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 1s cubic-bezier(0.21, 0.45, 0.32, 0.9);
+        }
+        .reveal-up.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .parallax-bg {
+            will-change: transform;
+            transition: transform 0.1s linear;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md shadow-sm h-20">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter flex justify-between items-center h-full">
+<div class="flex items-center gap-base cursor-pointer">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="temple_hindu">temple_hindu</span>
+<span class="font-headline-lg text-headline-lg font-semibold text-primary">VASTU PARIWAR</span>
+</div>
+<nav class="hidden md:flex items-center gap-gutter">
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors" href="#">Consultation</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors" href="#">Case Studies</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1" href="#">About Us</a>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-full font-label-md hover:bg-opacity-90 transition-all cursor-pointer active:opacity-70">Consult Now</button>
+</nav>
+<button class="md:hidden text-primary" id="mobileMenuBtn">
+<span class="material-symbols-outlined text-3xl" data-icon="menu">menu</span>
+</button>
+</div>
+</header>
+<!-- Mobile Drawer Overlay -->
+<div class="fixed inset-0 bg-black/50 z-[60] hidden transition-opacity duration-300 opacity-0" id="drawerOverlay"></div>
+<!-- NavigationDrawer -->
+<aside class="fixed right-0 top-0 h-full w-80 bg-surface shadow-xl z-[70] translate-x-full transition-transform duration-300 p-base flex flex-col" id="navDrawer">
+<div class="flex justify-between items-center p-base border-b border-outline-variant/20 mb-base">
+<span class="font-headline-md text-headline-md text-primary">Vastu Pariwar Menu</span>
+<button class="text-on-surface-variant" id="closeDrawerBtn">
+<span class="material-symbols-outlined" data-icon="close">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-2">
+<a class="flex items-center gap-4 p-4 text-on-surface-variant rounded-lg hover:bg-surface-container-high transition-all" href="../index.html">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-label-md text-label-md">Home</span>
+</a>
+<a class="flex items-center gap-4 p-4 text-on-surface-variant rounded-lg hover:bg-surface-container-high transition-all" href="../index.html#about">
+<span class="material-symbols-outlined" data-icon="architecture">architecture</span>
+<span class="font-label-md text-label-md">Consultation</span>
+</a>
+<a class="flex items-center gap-4 p-4 text-on-surface-variant rounded-lg hover:bg-surface-container-high transition-all" href="../index.html#services">
+<span class="material-symbols-outlined" data-icon="History">history</span>
+<span class="font-label-md text-label-md">Case Studies</span>
+</a>
+<a class="flex items-center gap-4 p-4 bg-secondary-container text-on-secondary-container rounded-lg font-bold" href="#">
+<span class="material-symbols-outlined" data-icon="Groups">groups</span>
+<span class="font-label-md text-label-md">About Us</span>
+</a>
+</div>
+</aside>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative h-[60vh] md:h-[70vh] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover parallax-bg" data-alt="A serene and luxurious modern Indian home interior with warm sunlight streaming through large windows, featuring minimalist wooden furniture and a subtle golden glow. The atmosphere is peaceful, embodying the principles of Vastu Shastra and traditional spatial harmony." id="heroImage" src="../images/vastu_pariwar_home_animated_screen.png" style="transform: scale(1.1);"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/60 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-container-max mx-auto px-margin-mobile md:px-gutter w-full">
+<div class="max-w-2xl reveal-up active">
+<span class="inline-block bg-secondary-container text-on-secondary-container px-4 py-1 rounded-full font-label-md text-xs mb-6 tracking-widest uppercase">Ancient Wisdom • Modern Living</span>
+<h1 class="font-headline-xl text-headline-xl-mobile md:text-headline-xl text-primary mb-6">Harmonizing Homes, Energizing Lives.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">Vastu Pariwar is a premier consultancy dedicated to bridging the timeless principles of Vastu Shastra with contemporary architectural excellence.</p>
+</div>
+</div>
+</section>
+<!-- Our Story / Mission -->
+<section class="py-stack-lg bg-surface">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-stack-lg items-center">
+<div class="relative reveal-up">
+<!-- Decorative Vastu Compass -->
+<div class="absolute -top-10 -left-10 w-40 h-40 opacity-10 pointer-events-none">
+<span class="material-symbols-outlined text-[160px] text-secondary" data-icon="explore">explore</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-8 relative">The Story of Vastu Pariwar</h2>
+<div class="space-y-6 text-on-surface-variant font-body-md leading-relaxed">
+<p>Founded on the belief that our environment directly influences our inner peace and worldly prosperity, Vastu Pariwar began as a small family initiative to preserve traditional spatial science.</p>
+<p>Over two decades, we have evolved into a sophisticated consultancy that serves modern families and businesses across India. Our mission is to transform living and working spaces into conduits of positive energy (Prana), ensuring that your home isn't just a structure, but a sanctuary for growth.</p>
+</div>
+<div class="mt-10 p-gutter bg-surface-container-low rounded-xl border border-secondary/10 flex items-start gap-gutter">
+<span class="material-symbols-outlined text-secondary text-4xl" data-icon="format_quote">format_quote</span>
+<p class="italic text-on-surface font-medium">"Our vision is to see every modern Indian home breathe with the rhythm of nature, fostering generations of health, wealth, and spiritual clarity."</p>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-4 pt-12">
+<div class="rounded-xl overflow-hidden sunlight-shadow h-64 reveal-up" style="transition-delay: 200ms;">
+<img class="w-full h-full object-cover" data-alt="Close up of a traditional architectural blueprint being reviewed by a consultant with elegant gold tools, set against a bright white marble background with warm sunlight." src="../images/vastu_pariwar_home_animated_screen.png"/>
+</div>
+<div class="bg-secondary-container/30 p-gutter rounded-xl reveal-up" style="transition-delay: 300ms;">
+<span class="text-4xl font-headline-lg text-primary block">500+</span>
+<span class="font-label-md text-xs uppercase tracking-tighter">Homes Harmonized</span>
+</div>
+</div>
+<div class="space-y-4">
+<div class="bg-primary-container/20 p-gutter rounded-xl reveal-up" style="transition-delay: 400ms;">
+<span class="text-4xl font-headline-lg text-primary block">25</span>
+<span class="font-label-md text-xs uppercase tracking-tighter">Years of Experience</span>
+</div>
+<div class="rounded-xl overflow-hidden sunlight-shadow h-80 reveal-up" style="transition-delay: 500ms;">
+<img class="w-full h-full object-cover" data-alt="A beautifully designed modern living room with a focus on directional lighting and green plants, symbolizing vitality and growth in a Vastu-compliant space." src="../images/vastu_pariwar_home_animated_screen.png"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Values Section -->
+<section class="py-stack-lg bg-surface-container-lowest">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter text-center mb-stack-lg reveal-up">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-4">The Pillars of Our Practice</h2>
+<div class="w-24 h-1 bg-secondary mx-auto rounded-full"></div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Value 1 -->
+<div class="group p-stack-md bg-white rounded-xl sunlight-shadow sunlight-shadow-hover transition-all duration-300 border border-secondary/5 reveal-up">
+<div class="w-16 h-16 bg-secondary-fixed/30 rounded-full flex items-center justify-center mb-6 mx-auto group-hover:scale-110 transition-transform float-animation" style="animation-delay: 0s;">
+<span class="material-symbols-outlined text-secondary text-3xl" data-icon="verified">verified</span>
+</div>
+<h3 class="font-headline-md text-primary mb-4 text-center">Authenticity</h3>
+<p class="text-on-surface-variant text-sm text-center">Strict adherence to the Vedas and original Vastu texts without modern dilution.</p>
+</div>
+<!-- Value 2 -->
+<div class="group p-stack-md bg-white rounded-xl sunlight-shadow sunlight-shadow-hover transition-all duration-300 border border-secondary/5 reveal-up" style="transition-delay: 100ms;">
+<div class="w-16 h-16 bg-primary-fixed/30 rounded-full flex items-center justify-center mb-6 mx-auto group-hover:scale-110 transition-transform float-animation" style="animation-delay: 0.5s;">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="moving">moving</span>
+</div>
+<h3 class="font-headline-md text-primary mb-4 text-center">Prosperity</h3>
+<p class="text-on-surface-variant text-sm text-center">Designs focused on unlocking financial flow and professional success for residents.</p>
+</div>
+<!-- Value 3 -->
+<div class="group p-stack-md bg-white rounded-xl sunlight-shadow sunlight-shadow-hover transition-all duration-300 border border-secondary/5 reveal-up" style="transition-delay: 200ms;">
+<div class="w-16 h-16 bg-tertiary-fixed/30 rounded-full flex items-center justify-center mb-6 mx-auto group-hover:scale-110 transition-transform float-animation" style="animation-delay: 1s;">
+<span class="material-symbols-outlined text-tertiary text-3xl" data-icon="spa">spa</span>
+</div>
+<h3 class="font-headline-md text-primary mb-4 text-center">Harmony</h3>
+<p class="text-on-surface-variant text-sm text-center">Balancing the Panch Mahabhoota (Five Elements) to create family unity and health.</p>
+</div>
+<!-- Value 4 -->
+<div class="group p-stack-md bg-white rounded-xl sunlight-shadow sunlight-shadow-hover transition-all duration-300 border border-secondary/5 reveal-up" style="transition-delay: 300ms;">
+<div class="w-16 h-16 bg-secondary-container/20 rounded-full flex items-center justify-center mb-6 mx-auto group-hover:scale-110 transition-transform float-animation" style="animation-delay: 1.5s;">
+<span class="material-symbols-outlined text-secondary text-3xl" data-icon="favorite">favorite</span>
+</div>
+<h3 class="font-headline-md text-primary mb-4 text-center">Personalized Care</h3>
+<p class="text-on-surface-variant text-sm text-center">Every consultation is tailored to the unique energetic footprint of your family.</p>
+</div>
+</div>
+</section>
+<!-- Team Section -->
+<section class="py-stack-lg bg-surface relative overflow-hidden">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+<div class="flex flex-col md:flex-row items-center gap-stack-lg">
+<div class="w-full md:w-1/2 rounded-2xl overflow-hidden sunlight-shadow reveal-up">
+<img alt="Vastu Pariwar Consultants" class="w-full h-full object-cover aspect-[4/3] hover:scale-105 transition-transform duration-700" src="../images/vastu_pariwar_home_animated_screen.png"/>
+</div>
+<div class="w-full md:w-1/2 space-y-6 reveal-up" style="transition-delay: 200ms;">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary">Your Professional Vastu Partners</h2>
+<p class="text-on-surface-variant font-body-md">Our team consists of certified Vastu Shastris and modern architects who work in tandem. This unique collaboration ensures that your home is both spiritually aligned and structurally sound.</p>
+<div class="space-y-4">
+<div class="flex items-center gap-4 p-4 rounded-lg bg-white border-l-4 border-secondary sunlight-shadow">
+<span class="material-symbols-outlined text-secondary" data-icon="workspace_premium">workspace_premium</span>
+<span class="font-medium">Certified Experts with 15+ years experience</span>
+</div>
+<div class="flex items-center gap-4 p-4 rounded-lg bg-white border-l-4 border-primary sunlight-shadow">
+<span class="material-symbols-outlined text-primary" data-icon="architecture">architecture</span>
+<span class="font-medium">Modern Architectural Integration Specialists</span>
+</div>
+</div>
+<button class="mt-4 bg-primary text-on-primary px-8 py-4 rounded-lg font-label-md hover:scale-105 transition-transform">Meet the Consultants</button>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-stack-lg bg-primary-container/10">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+<div class="bg-primary p-stack-lg rounded-3xl relative overflow-hidden sunlight-shadow text-center md:text-left flex flex-col md:flex-row items-center justify-between gap-gutter reveal-up">
+<!-- Decorative Elements -->
+<div class="absolute -top-10 -right-10 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
+<div class="absolute -bottom-20 -left-20 w-80 h-80 bg-secondary/20 rounded-full blur-3xl"></div>
+<div class="relative z-10">
+<h2 class="font-headline-lg text-on-primary mb-2">Ready to align your space?</h2>
+<p class="text-on-primary/80 font-body-md">Join over 500+ families who have found peace and prosperity with Vastu Pariwar.</p>
+</div>
+<div class="relative z-10 flex gap-4">
+<button class="bg-white text-primary px-8 py-4 rounded-full font-bold hover:bg-secondary-container transition-colors">Book a Consultation</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-highest dark:bg-surface-container-low w-full py-stack-lg border-t border-outline-variant/20">
+<div class="max-w-container-max mx-auto px-margin-mobile grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="space-y-4">
+<div class="flex items-center gap-base">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="temple_hindu">temple_hindu</span>
+<span class="font-headline-md text-headline-md text-primary">VASTU PARIWAR</span>
+</div>
+<p class="text-on-surface-variant font-body-md pr-8">Bringing ancient spatial wisdom to the modern doorstep. Experience the power of harmony in every corner of your life.</p>
+</div>
+<div class="space-y-4">
+<h4 class="font-label-md text-primary uppercase tracking-widest">Quick Links</h4>
+<ul class="space-y-2">
+<li><a class="text-on-surface-variant font-body-md hover:text-secondary transition-colors" href="../services.html">Services</a></li>
+<li><a class="text-on-surface-variant font-body-md hover:text-secondary transition-colors" href="../index.html">Home</a></li>
+<li><a class="text-on-surface-variant font-body-md hover:text-secondary transition-colors" href="../index.html#about">Our Process</a></li>
+<li><a class="text-on-surface-variant font-body-md hover:text-secondary transition-colors" href="../index.html#testimonials">Testimonials</a></li>
+<li><a class="text-on-surface-variant font-body-md hover:text-secondary transition-colors" href="../pages/contact.html">Contact Us</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="font-label-md text-primary uppercase tracking-widest">Contact Info</h4>
+<div class="flex items-center gap-4 text-on-surface-variant">
+<span class="material-symbols-outlined" data-icon="location_on">location_on</span>
+<span class="font-body-md">Vastu Bhavan, Sector 18, Navi Mumbai, MH</span>
+</div>
+<div class="flex items-center gap-4 text-on-surface-variant">
+<span class="material-symbols-outlined" data-icon="call">call</span>
+<span class="font-body-md">+91 98765 43210</span>
+</div>
+<div class="flex items-center gap-4 text-on-surface-variant">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+<span class="font-body-md">consult@vastupariwar.com</span>
+</div>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-mobile mt-12 pt-8 border-t border-outline-variant/10 text-center text-on-surface-variant/60 font-body-md">
+        © 2024 Vastu Pariwar. Harmonizing Lives through Ancient Wisdom.
+    </div>
+</footer>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 w-full md:hidden z-50 rounded-t-xl bg-surface/90 backdrop-blur-lg border-t border-outline-variant/20 shadow-[0px_-4px_20px_rgba(0,0,0,0.05)] h-16 px-margin-mobile flex justify-around items-center">
+<a href="https://wa.me/917369917513" class="flex flex-col items-center text-on-surface-variant active:scale-95 transition-transform">
+<span class="material-symbols-outlined" data-icon="chat">chat</span>
+<span class="text-[10px] font-label-md">WhatsApp</span>
+</a>
+<a class="flex items-center gap-4 p-4 text-on-surface-variant active:scale-95 transition-transform" href="tel:+917369917513">
+<span class="material-symbols-outlined" data-icon="call">call</span>
+<span class="text-[10px] font-label-md">Call Now</span>
+</a>
+<button class="flex flex-col items-center text-on-surface-variant active:scale-95 transition-transform">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+<span class="text-[10px] font-label-md">Enquire</span>
+</button>
+</nav>
+<script>
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const closeDrawerBtn = document.getElementById('closeDrawerBtn');
+    const navDrawer = document.getElementById('navDrawer');
+    const drawerOverlay = document.getElementById('drawerOverlay');
+
+    function toggleDrawer() {
+        const isOpen = !navDrawer.classList.contains('translate-x-full');
+        if (isOpen) {
+            navDrawer.classList.add('translate-x-full');
+            drawerOverlay.classList.add('hidden');
+            drawerOverlay.classList.remove('opacity-100');
+        } else {
+            navDrawer.classList.remove('translate-x-full');
+            drawerOverlay.classList.remove('hidden');
+            setTimeout(() => drawerOverlay.classList.add('opacity-100'), 10);
+        }
+    }
+
+    mobileMenuBtn.addEventListener('click', toggleDrawer);
+    closeDrawerBtn.addEventListener('click', toggleDrawer);
+    drawerOverlay.addEventListener('click', toggleDrawer);
+
+    // Parallax effect for hero image
+    const heroImage = document.getElementById('heroImage');
+    window.addEventListener('scroll', () => {
+        const scroll = window.pageYOffset;
+        if (heroImage) {
+            heroImage.style.transform = `translateY(${scroll * 0.4}px) scale(1.1)`;
+        }
+    });
+
+    // Intersection Observer for Reveal animations
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.reveal-up').forE

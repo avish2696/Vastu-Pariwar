@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Services | VASTU PARIWAR</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../css/style.css" />
+  <script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "secondary-fixed": "#ffe088",
+                      "on-tertiary-fixed-variant": "#005316",
+                      "secondary": "#735c00",
+                      "surface-container-high": "#eae8e7",
+                      "error": "#ba1a1a",
+                      "on-secondary": "#ffffff",
+                      "on-secondary-fixed": "#241a00",
+                      "tertiary-container": "#69c56c",
+                      "surface-container-low": "#f6f3f2",
+                      "surface": "#fbf9f8",
+                      "on-surface-variant": "#554336",
+                      "inverse-surface": "#303030",
+                      "on-error": "#ffffff",
+                      "surface-container-highest": "#e4e2e1",
+                      "surface-container-lowest": "#ffffff",
+                      "tertiary-fixed": "#99f899",
+                      "error-container": "#ffdad6",
+                      "inverse-on-surface": "#f3f0f0",
+                      "on-tertiary-fixed": "#002105",
+                      "on-error-container": "#93000a",
+                      "on-secondary-container": "#745c00",
+                      "outline": "#887364",
+                      "surface-variant": "#e4e2e1",
+                      "surface-tint": "#8f4e00",
+                      "on-background": "#1b1c1c",
+                      "on-primary": "#ffffff",
+                      "primary-container": "#ff9933",
+                      "primary": "#8f4e00",
+                      "on-surface": "#1b1c1c",
+                      "outline-variant": "#dbc2b0",
+                      "on-tertiary-container": "#005015",
+                      "primary-fixed-dim": "#ffb77a",
+                      "tertiary-fixed-dim": "#7edb7f",
+                      "primary-fixed": "#ffdcc2",
+                      "surface-dim": "#dcd9d9",
+                      "on-primary-fixed": "#2e1500",
+                      "surface-container": "#f0eded",
+                      "surface-bright": "#fbf9f8",
+                      "secondary-fixed-dim": "#e9c349",
+                      "inverse-primary": "#ffb77a",
+                      "on-secondary-fixed-variant": "#574500",
+                      "on-primary-container": "#693800",
+                      "secondary-container": "#fed65b",
+                      "tertiary": "#016e21",
+                      "background": "#fbf9f8",
+                      "on-tertiary": "#ffffff",
+                      "on-primary-fixed-variant": "#6d3a00"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "container-max": "1200px",
+                      "margin-mobile": "20px",
+                      "stack-md": "32px",
+                      "gutter": "24px",
+                      "stack-sm": "16px",
+                      "stack-lg": "64px",
+                      "base": "8px"
+              },
+              "fontFamily": {
+                      "headline-md": ["EB Garamond"],
+                      "headline-lg-mobile": ["EB Garamond"],
+                      "body-lg": ["Plus Jakarta Sans"],
+                      "headline-xl": ["EB Garamond"],
+                      "body-md": ["Plus Jakarta Sans"],
+                      "label-md": ["Plus Jakarta Sans"],
+                      "headline-lg": ["EB Garamond"]
+              },
+              "fontSize": {
+                      "headline-md": ["28px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                      "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                      "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "headline-xl": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                      "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                      "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                      "headline-lg": ["36px", {"lineHeight": "1.2", "fontWeight": "600"}]
+              }
+            },
+          },
+        }
+      </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-background">
+<!-- TopAppBar Component -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md shadow-sm">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter flex justify-between items-center h-20">
+<div class="flex items-center gap-3 cursor-pointer active:opacity-70">
+<span class="material-symbols-outlined text-primary text-3xl">temple_hindu</span>
+<h1 class="font-headline-lg text-headline-lg font-semibold text-primary dark:text-primary-fixed-dim">VASTU PARIWAR</h1>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="../index.html">Home</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1 transition-colors duration-300" href="../pages/services.html">Consultation</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="../index.html#services">Case Studies</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="../pages/about.html">About Us</a>
+</nav>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-lg font-label-md text-label-md cursor-pointer active:scale-95 hover:scale-105 transition-all shadow-sm hover:shadow-md shimmer-btn">
+                Consult Now
+            </button>
+</div>
+</header>
+<main class="pt-24 pb-stack-lg">
+<!-- Hero Section -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-gutter py-stack-lg flex flex-col md:flex-row items-center gap-stack-lg">
+<div class="md:w-1/2">
+<h2 class="font-headline-xl text-headline-xl text-on-surface mb-stack-sm">Harmonize Your Space with Ancient Wisdom</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-md leading-relaxed">
+                    At Vastu Pariwar, we bridge the gap between traditional spatial science and modern living. Discover our tailored consultation services designed to bring prosperity, health, and peace to your environment.
+                </p>
+<div class="flex gap-4">
+<span class="inline-flex items-center gap-2 bg-secondary-container text-on-secondary-container px-4 py-2 rounded-full font-label-md">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">stars</span> Expert Guidance
+                    </span>
+<span class="inline-flex items-center gap-2 bg-tertiary-container text-on-tertiary-container px-4 py-2 rounded-full font-label-md">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">eco</span> Natural Balance
+                    </span>
+</div>
+</div>
+<div class="md:w-1/2 relative">
+<div class="absolute inset-0 bg-secondary/5 rounded-full blur-3xl -z-10"></div>
+<img alt="Vastu Harmonized Home" class="rounded-xl shadow-lg w-full aspect-[4/3] object-cover border border-secondary/20" src="../images/vastu_pariwar_home_animated_screen.png"/>
+</div>
+</section>
+<!-- Services Bento Grid -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-gutter py-stack-lg" id="services-section">
+<div class="text-center mb-stack-lg reveal-item">
+<h3 class="font-headline-lg text-headline-lg text-primary mb-4">Our Specialized Consultations</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">Select a service that matches your journey towards a balanced life. Each session is personalized to your unique energetic blueprint.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Home Vastu -->
+<div class="md:col-span-8 group relative overflow-hidden bg-surface-container-lowest rounded-xl p-stack-md border border-secondary/10 shadow-sm hover:shadow-lg transition-all duration-300 reveal-item">
+<div class="flex flex-col md:flex-row gap-gutter h-full">
+<div class="md:w-1/2 flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 bg-primary-fixed flex items-center justify-center rounded-lg mb-4 text-primary">
+<span class="material-symbols-outlined">home</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-on-surface mb-2">Home Vastu</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Deep analysis of your residence to align primary elements (Pancha Bhoota) for family health and mental peace.</p>
+<ul class="space-y-3 mb-8">
+<li class="flex items-center gap-3 text-on-surface-variant font-label-md">
+<span class="material-symbols-outlined text-secondary text-base">sunny</span> Entrance Alignment
+                                    </li>
+<li class="flex items-center gap-3 text-on-surface-variant font-label-md">
+<span class="material-symbols-outlined text-secondary text-base">sunny</span> Bedroom Energy Flow
+                                    </li>
+<li class="flex items-center gap-3 text-on-surface-variant font-label-md">
+<span class="material-symbols-outlined text-secondary text-base">sunny</span> Kitchen Fire Placement
+                                    </li>
+</ul>
+</div>
+<button class="w-full md:w-max bg-primary text-on-primary px-8 py-3 rounded-lg font-label-md hover:scale-105 active:scale-95 transition-transform shimmer-btn">Consult Now</button>
+</div>
+<div class="md:w-1/2 h-64 md:h-full">
+<img alt="Residential Vastu" class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition-transform duration-500" src="../images/vastu_pariwar_home_animated_screen.png"/>
+</div>
+</div>
+</div>
+<!-- Apartment Vastu -->
+<div class="md:col-span-4 bg-white rounded-xl p-stack-md border border-secondary/10 shadow-sm flex flex-col hover:shadow-lg transition-all reveal-item">
+<div class="w-12 h-12 bg-secondary-fixed flex items-center justify-center rounded-lg mb-4 text-secondary">
+<span class="material-symbols-outlined">apartment</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-on-surface mb-2">Apartment Vastu</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Expert remedies for high-rise living where structural changes are limited. Focus on internal corrections.</p>
+<div class="mt-auto pt-6 border-t border-outline-variant/20 flex justify-between items-center group cursor-pointer">
+<span class="font-label-md text-primary">Limited Space Solutions</span>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</div>
+</div>
+<!-- Business & Office Vastu -->
+<div class="md:col-span-4 bg-white rounded-xl p-stack-md border border-secondary/10 shadow-sm flex flex-col hover:shadow-lg transition-all reveal-item">
+<div class="w-12 h-12 bg-tertiary-fixed flex items-center justify-center rounded-lg mb-4 text-tertiary">
+<span class="material-symbols-outlined">work</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-on-surface mb-2">Business &amp; Office</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Boost productivity and cash flow by positioning key decision-makers and financial centers correctly.</p>
+<div class="mt-auto pt-6 border-t border-outline-variant/20">
+<button class="text-primary font-bold hover:underline active:scale-95 transition-transform inline-block">Learn More</button>
+</div>
+</div>
+<!-- Commercial Property -->
+<div class="md:col-span-8 group relative overflow-hidden bg-surface-container-low rounded-xl p-stack-md border border-secondary/10 shadow-sm hover:shadow-lg transition-all duration-300 reveal-item">
+<div class="flex flex-col md:flex-row-reverse gap-gutter h-full">
+<div class="md:w-1/2 flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 bg-on-tertiary-fixed-variant/10 flex items-center justify-center rounded-lg mb-4 text-on-tertiary-fixed-variant">
+<span class="material-symbols-outlined">domain</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-on-surface mb-2">Commercial Property</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Strategic planning for factories, malls, and showrooms to ensure sustained profitability and growth.</p>
+<ul class="space-y-3 mb-8">
+<li class="flex items-center gap-3 text-on-surface-variant font-label-md">
+<span class="material-symbols-outlined text-secondary text-base">architecture</span> Industrial Layout
+                                    </li>
+<li class="flex items-center gap-3 text-on-surface-variant font-label-md">
+<span class="material-symbols-outlined text-secondary text-base">architecture</span> Warehouse Optimization
+                                    </li>
+</ul>
+</div>
+<button class="w-full md:w-max border-2 border-primary text-primary px-8 py-3 rounded-lg font-label-md hover:bg-primary hover:text-on-primary hover:scale-105 active:scale-95 transition-all">Enquire Now</button>
+</div>
+<div class="md:w-1/2 h-64 md:h-full">
+<img alt="Commercial Vastu Planning" class="w-full h-full object-cover rounded-lg" src="../images/vastu_pariwar_home_animated_screen.png"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Specialized Modes -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-gutter py-stack-lg">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-stack-lg">
+<!-- Online Consultation -->
+<div class="compass-ui p-stack-lg rounded-2xl border border-outline-variant/30 text-center flex flex-col items-center reveal-item">
+<span class="material-symbols-outlined text-primary text-5xl mb-6">videocam</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">Online Consultation</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-stack-md">Global accessibility via video call. Perfect for reviewing blueprints and providing remote remedies for clients worldwide.</p>
+<div class="flex flex-wrap justify-center gap-4 mb-stack-md">
+<span class="bg-surface-container-high px-4 py-1 rounded-full text-label-md font-medium">Anywhere in World</span>
+<span class="bg-surface-container-high px-4 py-1 rounded-full text-label-md font-medium">Flexible Scheduling</span>
+</div>
+<button class="bg-primary text-on-primary px-10 py-4 rounded-lg font-label-md shadow-md hover:shadow-xl hover:scale-105 active:scale-95 transition-all shimmer-btn">Book Online Session</button>
+</div>
+<!-- On-Site Home Visit -->
+<div class="bg-surface-container-highest p-stack-lg rounded-2xl border border-outline-variant/30 text-center flex flex-col items-center reveal-item">
+<span class="material-symbols-outlined text-primary text-5xl mb-6">location_on</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">On-Site Home Visit</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-stack-md">A thorough physical audit of your site. We use professional tools like compasses and energy meters for precise readings.</p>
+<div class="flex flex-wrap justify-center gap-4 mb-stack-md">
+<span class="bg-primary-fixed px-4 py-1 rounded-full text-label-md font-medium text-primary">In-Person Audit</span>
+<span class="bg-primary-fixed px-4 py-1 rounded-full text-label-md font-medium text-primary">Full Energy Report</span>
+</div>
+<button class="bg-primary text-on-primary px-10 py-4 rounded-lg font-label-md shadow-md hover:shadow-xl hover:scale-105 active:scale-95 transition-all shimmer-btn">Schedule a Visit</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Component -->
+<footer class="bg-surface-container-highest dark:bg-surface-container-low w-full py-stack-lg border-t border-outline-variant/20">
+<div class="max-w-container-max mx-auto px-margin-mobile grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div>
+<h3 class="font-headline-md text-headline-md text-primary mb-4">VASTU PARIWAR</h3>
+<p class="text-on-surface-variant font-body-md leading-relaxed">
+                    © 2024 Vastu Pariwar. Harmonizing Lives through Ancient Wisdom. We believe every space has a soul that needs alignment.
+                </p>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="font-label-md text-primary uppercase tracking-widest mb-2">Quick Links</h4>
+<a class="text-on-surface-variant hover:text-secondary transition-colors cursor-pointer" href="../pages/services.html">Services</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors cursor-pointer" href="../index.html#process">Vastu Compass</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors cursor-pointer" href="../index.html#process">Our Process</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors cursor-pointer" href="../index.html#testimonials">Testimonials</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors cursor-pointer" href="../pages/contact.html">Contact Us</a>
+</div>
+<div>
+<h4 class="font-label-md text-primary uppercase tracking-widest mb-4">Connect with Us</h4>
+<div class="flex gap-4 mb-6">
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary transition-colors">face_nod</span>
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary transition-colors">share</span>
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary transition-colors">language</span>
+</div>
+<div class="bg-surface-container rounded-lg p-4">
+<p class="font-label-md text-on-surface-variant">Weekly spatial tips in your inbox:</p>
+<div class="flex mt-2">
+<input class="bg-white border-none rounded-l-lg w-full px-4 focus:ring-1 focus:ring-primary" placeholder="Email" type="email"/>
+<button class="bg-primary text-on-primary px-4 py-2 rounded-r-lg active:scale-95 transition-transform"><span class="material-symbols-outlined">send</span></button>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<!-- BottomNavBar Component (Mobile Only) -->
+<nav class="fixed bottom-0 w-full md:hidden z-50 rounded-t-xl bg-surface/90 backdrop-blur-lg border-t border-outline-variant/20 shadow-[0px_-4px_20px_rgba(0,0,0,0.05)]">
+<div class="flex justify-around items-center h-16 px-margin-mobile">
+<a class="flex flex-col items-center text-on-surface-variant active:scale-95 transition-transform" href="https://wa.me/917369917513">
+<span class="material-symbols-outlined">chat</span>
+<span class="font-label-md text-label-md">WhatsApp</span>
+</a>
+<a class="flex flex-col items-center text-on-surface-variant active:scale-95 transition-transform" href="tel:+917369917513">
+<span class="material-symbols-outlined">call</span>
+<span class="font-label-md text-label-md">Call Now</span>
+</a>
+<a href="../pages/contact.html" class="flex flex-col items-center text-primary active:scale-95 transition-transform duration-200">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">mail</span>
+<span class="font-label-md text-label-md font-bold">Enquire</span>
+</a>
+</div>
+</nav>
+<!-- FAB -->
+<button class="fixed bottom-24 right-6 md:bottom-8 md:right-8 bg-primary-container text-on-primary-container w-14 h-14 rounded-full shadow-lg flex items-center justify-center hover:scale-110 active:scale-95 transition-transform z-40 shimmer-btn">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">add_comment</span>
+</button>
+<script>
+        // Micro-interactions for scroll effects
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('shadow-md');
+                header.classList.remove('shadow-sm');
+            } else {
+                header.classList.add('shadow-sm');
+                header.classList.remove('shadow-md');
+            }
+        });
+
+        // IntersectionObserver for staggered reveal
+        const revealCallback = (entries, observer) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    // Add staggered delay based on appearing sequence if needed, 
+                    // or just reveal as they enter
+                    setTimeout(() => {
+                        entry.target.classList.add('active');
+                    }, 100);
+                    observer.unobserve(entry.target);
+                }
+            });
+        };
+
+        const revealObserver = new IntersectionObserver(revealCallback, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+
+        document.querySelectorAll('.reveal-item').forEach(item => {
+            revealObserver.observe(item);
+        });
+    </script>
+</body></html>

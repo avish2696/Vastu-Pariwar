@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vastu Pariwar | Expert Vastu Guidance for Harmonious Living</title>
+  <meta name="description" content="Transform your home with expert Vastu guidance. 10,000+ happy families, 15+ years experience." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- TopAppBar -->
+  <header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl border-b border-outline-variant/10 shadow-sm">
+    <div class="max-w-[1200px] mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-full bg-primary-container/20 flex items-center justify-center">
+          <span class="material-symbols-outlined text-primary text-[28px]" style="font-variation-settings: 'FILL' 1;">temple_hindu</span>
+        </div>
+        <span style="font-family: 'EB Garamond', serif;" class="font-headline-lg text-headline-lg text-primary tracking-tight group-hover:text-primary/80 transition-colors">VASTU PARIWAR</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-10">
+        <a href="#home" class="font-label-md text-label-md text-primary font-semibold border-b-2 border-primary pb-1">Home</a>
+        <a href="#services" class="font-label-md text-label-md text-on-surface-variant font-medium hover:text-primary transition-colors">Services</a>
+        <a href="#about" class="font-label-md text-label-md text-on-surface-variant font-medium hover:text-primary transition-colors">About Us</a>
+        <a href="#contact" class="font-label-md text-label-md text-on-surface-variant font-medium hover:text-primary transition-colors">Contact</a>
+      </nav>
+      <div class="flex items-center gap-4">
+        <a href="pages/contact.html" class="hidden md:inline-flex items-center gap-2 px-6 py-2.5 bg-primary text-on-primary rounded-full font-label-md text-label-md font-semibold hover:opacity-90 transition-all active:scale-95 shadow-md">
+          Book Now
+        </a>
+        <button class="md:hidden text-primary" id="mobileMenuBtn" aria-label="Menu">
+          <span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="fixed inset-0 z-[60] bg-surface/95 backdrop-blur-xl transform translate-x-full transition-transform duration-300 md:hidden" id="mobileDrawer">
+    <div class="p-6 flex justify-end">
+      <button class="text-primary" id="closeDrawerBtn" aria-label="Close menu">
+        <span class="material-symbols-outlined text-[28px]">close</span>
+      </button>
+    </div>
+    <nav class="flex flex-col items-center gap-6 p-8">
+      <a href="#home" class="text-2xl" style="font-family: 'EB Garamond', serif; font-weight: 600; color: var(--color-primary);">Home</a>
+      <a href="#services" class="text-2xl text-on-surface-variant hover:text-primary transition-colors" style="font-family: 'EB Garamond', serif; font-weight: 600;">Services</a>
+      <a href="#about" class="text-2xl text-on-surface-variant hover:text-primary transition-colors" style="font-family: 'EB Garamond', serif; font-weight: 600;">About Us</a>
+      <a href="#contact" class="text-2xl text-on-surface-variant hover:text-primary transition-colors" style="font-family: 'EB Garamond', serif; font-weight: 600;">Contact</a>
+      <a href="pages/contact.html" class="mt-4 w-full max-w-[200px] text-center py-3 bg-primary text-on-primary rounded-full font-label-md font-semibold">Book Consultation</a>
+    </nav>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="relative min-h-[90vh] flex items-center overflow-hidden pt-20" id="home">
+      <div class="absolute inset-0 z-0">
+        <img
+          src="images/a_beautiful_modern_indian_house_exterior_at_dusk_warm_lighting_elegant_screen.png"
+          alt="Hero background"
+          class="w-full h-full object-cover opacity-25"
+          onerror="this.style.display='none'"
+        />
+        <div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/90 to-surface/60"></div>
+      </div>
+      <div class="relative z-10 max-w-[1200px] mx-auto px-6 w-full">
+        <div class="max-w-2xl fade-in">
+          <span class="inline-block py-2 px-5 bg-primary-container/15 border border-primary-container/30 text-primary rounded-full font-label-md text-label-md uppercase tracking-widest mb-6">
+            Ancient Wisdom, Modern Harmony
+          </span>
+          <h1 class="font-headline-xl text-headline-xl text-primary leading-tight mb-6" style="font-family: 'EB Garamond', serif;">
+            Transform Your Home with <span class="text-gradient-saffron">Expert Vastu Guidance</span>
+          </h1>
+          <p class="font-body-lg text-body-lg text-on-surface-variant mb-8 max-w-xl">
+            Bring Peace, Prosperity, Happiness, and Positive Energy into Your Home with Personalized Vastu Consultation tailored to your unique space.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a href="pages/contact.html" class="inline-flex items-center gap-2 px-8 py-4 bg-primary text-on-primary rounded-lg font-label-md font-semibold shadow-lg hover:opacity-90 transition-all active:scale-95">
+              Book Free Consultation
+              <span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">arrow_forward</span>
+            </a>
+            <a href="#contact" class="inline-flex items-center gap-2 px-8 py-4 bg-surface border-2 border-primary/20 text-primary rounded-lg font-label-md font-semibold hover:bg-primary-container/10 transition-all active:scale-95">
+              <span class="material-symbols-outlined text-[20px]">phone_in_talk</span>
+              Call Now
+            </a>
+          </div>
+            <div class="flex items-center gap-8 mt-12">
+            <div>
+              <p class="font-headline-sm text-headline-sm text-primary" style="font-family: 'EB Garamond', serif;">10,000+</p>
+              <p class="font-label-md text-label-md text-on-surface-variant">Happy Families</p>
+            </div>
+            <div class="w-px h-10" style="background: rgba(136, 115, 100, 0.3);"></div>
+            <div>
+              <p class="font-headline-sm text-headline-sm text-primary" style="font-family: 'EB Garamond', serif;">15+</p>
+              <p class="font-label-md text-label-md text-on-surface-variant">Years Experience</p>
+            </div>
+            <div class="w-px h-10 hidden sm:block" style="background: rgba(136, 115, 100, 0.3);"></div>
+            <div class="hidden sm:flex items-center -space-x-3">
+              <img src="images/a_professional_vastu_consultant_pointing_at_a_blueprint_on_a_table_in_a_modern_screen.png" alt="Consultant" class="w-10 h-10 rounded-full border-2 border-surface object-cover" onerror="this.style.display='none'" />
+              <img src="images/a_professional_female_vastu_consultant_in_business_casual_attire_pointing_at_a_screen.png" alt="Consultant" class="w-10 h-10 rounded-full border-2 border-surface object-cover" onerror="this.style.display='none'" />
+              <img src="images/a_happy_indian_family_standing_in_front_of_a_beautiful_modern_home_sunlight_screen.png" alt="Consultant" class="w-10 h-10 rounded-full border-2 border-surface object-cover" onerror="this.style.display='none'" />
+              <span class="ml-2 font-label-md text-label-md text-on-surface-variant">Expert Consultants</span>
+            </div>
+          </div>
+
+            <div>
+              <p class="font-headline-sm text-headline-sm text-primary" style="font-family: 'EB Garamond', serif;">10,000+</p>
+              <p class="font-label-md text-label-md text-on-surface-variant">Happy Families</p>
+            </div>
+            <div class="w-px h-10" style="background: rgba(136, 115, 100, 0.3);"></div>
+            <div>
+              <p class="font-headline-sm text-headline-sm text-primary" style="font-family: 'EB Garamond', serif;">15+</p>
+              <p class="font-label-md text-label-md text-on-surface-variant">Years Experience</p>
+            </div>
+            <div class="w-px h-10" style="background: rgba(136, 115, 100, 0.3);"></div>
+            <div>
+              <p class="font-headline-sm text-headline-sm text-primary" style="font-family: 'EB Garamond', serif;">500+</p>
+              <p class="font-label-md text-label-md text-on-surface-variant">Projects Delivered</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="py-24 px-6 bg-surface" id="services">
+      <div class="max-w-[1200px] mx-auto">
+        <div class="text-center mb-16 fade-in">
+          <h2 class="font-headline-lg text-headline-lg text-primary mb-4" style="font-family: 'EB Garamond', serif;">Our Services</h2>
+          <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Comprehensive Vastu solutions for every aspect of your life and business</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="premium-card bg-surface-container-lowest p-8 rounded-2xl fade-in">
+            <div class="w-14 h-14 rounded-full bg-primary-container/15 flex items-center justify-center mb-5">
+              <span class="material-symbols-outlined text-[32px] text-primary" style="font-variation-settings: 'FILL' 1;">home_work</span>
+            </div>
+            <h3 class="font-headline-sm text-headline-sm text-primary mb-3" style="font-family: 'EB Garamond', serif;">Residential Vastu</h3>
+            <p class="font-body-md text-on-surface-variant mb-5">Create a harmonious living space for your family with personalized home Vastu analysis.</p>
+            <a href="pages/services.html" class="inline-flex items-center gap-1 text-primary font-label-md font-semibold hover:gap-2 transition-all">Learn More <span class="material-symbols-outlined text-[18px]">arrow_forward</span></a>
+          </div>
+
+          <div class="premium-card bg-surface-container-lowest p-8 rounded-2xl fade-in">
+            <div class="w-14 h-14 rounded-full bg-secondary-container/15 flex items-center justify-center mb-5">
+              <span class="material-symbols-outlined text-[32px] text-secondary" style="font-variation-settings: 'FILL' 1;">business_center</span>
+            </div>
+            <h3 class="font-headline-sm text-headline-sm text-primary mb-3" style="font-family: 'EB Garamond', serif;">Business Vastu</h3>
+            <p class="font-body-md text-on-surface-variant mb-5">Enhance prosperity and growth in your workspace with strategic Vastu alignment.</p>
+            <a href="pages/services.html" class="inline-flex items-center gap-1 text-primary font-label-md font-semibold hover:gap-2 transition-all">Learn More <span class="material-symbols-outlined text-[18px]">arrow_forward</span></a>
+          </div>
+
+          <div class="premium-card bg-surface-container-lowest p-8 rounded-2xl fade-in">
+            <div class="w-14 h-14 rounded-full bg-tertiary-container/15 flex items-center justify-center mb-5">
+              <span class="material-symbols-outlined text-[32px] text-tertiary" style="font-variation-settings: 'FILL' 1;">apartment</span>
+            </div>
+            <h3 class="font-headline-sm text-headline-sm text-primary mb-3" style="font-family: 'EB Garamond', serif;">Apartment Solutions</h3>
+            <p class="font-body-md text-on-surface-variant mb-5">Effective Vastu remedies without structural changes for apartment living.</p>
+            <a href="pages/services.html" class="inline-flex items-center gap-1 text-primary font-label-md font-semibold hover:gap-2 transition-all">Learn More <span class="material-symbols-outlined text-[18px]">arrow_forward</span></a>
+          </div>
+
+          <div class="premium-card bg-surface-container-lowest p-8 rounded-2xl fade-in">
+            <div class="w-14 h-14 rounded-full bg-primary-container/15 flex items-center justify-center mb-5">
+              <span class="material-symbols-outlined text-[32px] text-primary" style="font-variation-settings: 'FILL' 1;">storefront</span>
+            </div>
+            <h3 class="font-headline-sm text-headline-sm text-primary mb-3" style="font-family: 'EB Garamond', serif;">Commercial Vastu</h3>
+            <p class="font-body-md text-on-surface-variant mb-5">Optimize factory and showroom layouts for maximum productivity and profit.</p>
+            <a href="pages/services.html" class="inline-flex items-center gap-1 text-primary font-label-md font-semibold hover:gap-2 transition-all">Learn More <span class="material-symbols-outlined text-[18px]">arrow_forward</span></a>
+          </div>
+
+          <div class="premium-card bg-surface-container-lowest p-8 rounded-2xl fade-in">
+            <div class="w-14 h-14 rounded-full bg-secondary-container/15 flex items-center justify-center mb-5">
+              <span class="material-symbols-outlined text-[32px] text-secondary" style="font-variation-settings: 'FILL' 1;">video_camera_front</span>
+            </div>
+            <h3 class="font-headline-sm text-headline-sm text-primary mb-3" style="font-family: 'EB Garamond', serif;">Online Consultation</h3>
+            <p class="font-body-md text-on-surface-variant mb-5">Get expert advice from anywhere in the world via video consultation.</p>
+            <a href="pages/services.html" class="inline-flex items-center gap-1 text-primary font-label-md font-semibold hover:gap-2 transition-all">Learn More <span class="material-symbols-outlined text-[18px]">arrow_forward</span></a>
+          </div>
+
+          <div class="premium-card bg-surface-container-lowest p-8 rounded-2xl fade-in">
+            <div class="w-14 h-14 rounded-full bg-tertiary-container/15 flex items-center justify-center mb-5">
+              <span class="material-symbols-outlined text-[32px] text-tertiary" style="font-variation-settings: 'FILL' 1;">person_pin_circle</span>
+            </div>
+            <h3 class="font-headline-sm text-headline-sm text-primary mb-3" style="font-family: 'EB Garamond', serif;">On-Site Visit</h3>
+            <p class="font-body-md text-on-surface-variant mb-5">Comprehensive physical assessment of your property with detailed analysis.</p>
+            <a href="pages/services.html" class="inline-flex items-center gap-1 text-primary font-label-md font-semibold hover:gap-2 transition-all">Learn More <span class="material-symbols-outlined text-[18px]">arrow_forward</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-24 px-6 bg-surface-container-low relative mandala-pattern" id="about">
+      <div class="max-w-[1200px] mx-auto relative z-10">
+        <div class="flex flex-col lg:flex-row gap-16 items-center">
+          <div class="w-full lg:w-1/2 relative fade-in">
+            <div class="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
+              <img
+                src="images/a_happy_indian_family_in_a_cozy_well_lit_living_room_laughing_together_feeling_screen.png"
+                alt="Vastu Consultant"
+                class="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                onerror="this.src='https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=800';"
+              />
+            </div>
+          </div>
+          <div class="w-full lg:w-1/2 fade-in">
+            <span class="inline-block py-1 px-4 bg-primary-container/15 border border-primary-container/30 text-primary rounded-full font-label-md text-label-md uppercase tracking-widest mb-6">About Us</span>
+            <h2 class="font-headline-xl text-headline-xl text-primary mb-6" style="font-family: 'EB Garamond', serif;">Bringing Ancient Wisdom to Modern Spaces</h2>
+            <p class="font-body-lg text-body-lg text-on-surface-variant mb-6">We help families and businesses create balanced living and working environments through practical Vastu guidance that blends tradition with contemporary needs.</p>
+            <p class="font-body-md text-on-surface-variant mb-8">With over 15 years of experience, our family-focused approach ensures that every consultation is tailored to your unique needs and circumstances.</p>
+            <div class="grid grid-cols-3 gap-4">
+              <div class="bg-surface p-5 rounded-2xl text-center border border-outline-variant/10">
+                <p class="font-headline-sm text-primary mb-1" style="font-family: 'EB Garamond', serif;">10k+</p>
+                <p class="font-label-md text-label-md text-on-surface-variant">Happy Clients</p>
+              </div>
+              <div class="bg-surface p-5 rounded-2xl text-center border border-outline-variant/10">
+                <p class="font-headline-sm text-primary mb-1" style="font-family: 'EB Garamond', serif;">15+</p>
+                <p class="font-label-md text-label-md text-on-surface-variant">Years Experience</p>
+              </div>
+              <div class="bg-surface p-5 rounded-2xl text-center border border-outline-variant/10">
+                <p class="font-headline-sm text-primary mb-1" style="font-family: 'EB Garamond', serif;">50+</p>
+                <p class="font-label-md text-label-md text-on-surface-variant">Cities Covered</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-24 px-6 bg-surface" id="process">
+      <div class="max-w-[1200px] mx-auto">
+        <div class="text-center mb-16 fade-in">
+          <h2 class="font-headline-lg text-headline-lg text-primary mb-4" style="font-family: 'EB Garamond', serif;">Our Consultation Process</h2>
+          <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">A simple, structured approach to transforming your space</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-8">
+          <div class="text-center fade-in">
+            <div class="w-16 h-16 rounded-full bg-primary text-on-primary flex items-center justify-center text-2xl font-bold mx-auto mb-4 shadow-lg">1</div>
+            <h4 class="font-label-md text-label-md text-primary font-semibold mb-2">Contact</h4>
+            <p class="font-body-sm text-on-surface-variant">Reach out via call or form</p>
+          </div>
+          <div class="text-center fade-in">
+            <div class="w-16 h-16 rounded-full bg-primary text-on-primary flex items-center justify-center text-2xl font-bold mx-auto mb-4 shadow-lg">2</div>
+            <h4 class="font-label-md text-label-md text-primary font-semibold mb-2">Schedule</h4>
+            <p class="font-body-sm text-on-surface-variant">Pick a convenient time</p>
+          </div>
+          <div class="text-center fade-in">
+            <div class="w-16 h-16 rounded-full bg-primary text-on-primary flex items-center justify-center text-2xl font-bold mx-auto mb-4 shadow-lg">3</div>
+            <h4 class="font-label-md text-label-md text-primary font-semibold mb-2">Meeting</h4>
+            <p class="font-body-sm text-on-surface-variant">Online or on-site visit</p>
+          </div>
+          <div class="text-center fade-in">
+            <div class="w-16 h-16 rounded-full bg-primary text-on-primary flex items-center justify-center text-2xl font-bold mx-auto mb-4 shadow-lg">4</div>
+            <h4 class="font-label-md text-label-md text-primary font-semibold mb-2">Analysis</h4>
+            <p class="font-body-sm text-on-surface-variant">Detailed Vastu evaluation</p>
+          </div>
+          <div class="text-center fade-in">
+            <div class="w-16 h-16 rounded-full bg-primary text-on-primary flex items-center justify-center text-2xl font-bold mx-auto mb-4 shadow-lg">5</div>
+            <h4 class="font-label-md text-label-md text-primary font-semibold mb-2">Solutions</h4>
+            <p class="font-body-sm text-on-surface-variant">Customized remedies</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-24 px-6 bg-surface-container-low relative mandala-pattern" id="testimonials">
+      <div class="max-w-[1200px] mx-auto relative z-10">
+        <div class="text-center mb-16 fade-in">
+          <h2 class="font-headline-lg text-headline-lg text-primary mb-4" style="font-family: 'EB Garamond', serif;">What Our Clients Say</h2>
+          <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Real stories of transformation and happiness</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="premium-card bg-surface-container-lowest p-8 rounded-2xl fade-in">
+            <div class="flex items-center gap-1 mb-4">
+              <span class="material-symbols-outlined text-[20px] text-secondary">star</span>
+              <span class="material-symbols-outlined text-[20px] text-secondary">star</span>
+              <span class="material-symbols-outlined text-[20px] text-secondary">star</span>
+              <span class="material-symbols-outlined text-[20px] text-secondary">star</span>
+              <span class="material-symbols-outlined text-[20px] text-secondary">star</span>
+            </div>
+            <p class="font-body-md text-on-surface-variant mb-6 italic">"After the consultation, our family noticed immediate positive changes. The expert guidance was practical and easy to implement."</p>
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center">
+                <span class="material-symbols-outlined text-primary">person</span>
+              </div>
+              <div>
+                <p class="font-label-md text-label-md text-primary font-semibold">Priya Sharma</p>
+                <p class="font-body-sm text-on-surface-variant">Homeowner, Mumbai</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="premium-card bg-surface-container-lowest p-8 rounded-2xl fade-in">
+            <div class="flex items-center gap-1 mb-4">
+              <span class="material-symbols-outlined text-[20px] text-secondary">star</span>
+              <span class="material-symbols-outlined text-[20px] text-secondary">star</span>
+              <span class="material-symbols-outlined text-[20px] text-secondary">star</span>
+              <span class="material-symbols-outlined text-[20px] text-secondary">star</span>
+              <span class="material-symbols-outlined text-[20px] text-secondary">star</span>
+            </div>
+            <p class="font-body-md text-on-surface-variant mb-6 italic">"Our business saw a 40% increase in revenue within 3 months of implementing the Vastu suggestions. Truly remarkable results."</p>
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center">
+                <span class="material-symbols-outlined text-primary">person</span>
+              </div>
+              <div>
+                <p class="font-label-md text-label-md text-primary font-semibold">Rajesh Patel</p>
+                <p class="font-body-sm text-on-surface-variant">Business Owner, Pune</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="premium-card bg-surface-container-lowest p-8 rounded-2xl fade-in">
+            <div class="flex items-center gap-1 mb-4">
+              <span class="material-symbols-outlined text-[20px] text-secondary">star</span>
+              <span class="material-symbols-outlined text-[20px] text-secondary">star</span>
+              <span class="material-symbols-outlined text-[20px] text-secondary">star</span>
+              <span class="material-symbols-outlined text-[20px] text-secondary">star</span>
+              <span class="material-symbols-outlined text-[20px] text-secondary">star</span>
+            </div>
+            <p class="font-body-md text-on-surface-variant mb-6 italic">"The online consultation was very detailed. They analyzed our floor plans remotely and gave precise remedies that actually worked."</p>
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center">
+                <span class="material-symbols-outlined text-primary">person</span>
+              </div>
+              <div>
+                <p class="font-label-md text-label-md text-primary font-semibold">Ananya Krishnan</p>
+                <p class="font-body-sm text-on-surface-variant">IT Professional, Bangalore</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-24 px-6 bg-surface" id="faq">
+      <div class="max-w-[800px] mx-auto">
+        <div class="text-center mb-16 fade-in">
+          <h2 class="font-headline-lg text-headline-lg text-primary mb-4" style="font-family: 'EB Garamond', serif;">Frequently Asked Questions</h2>
+          <p class="font-body-lg text-body-lg text-on-surface-variant">Quick answers to common questions</p>
+        </div>
+        <div class="space-y-4" id="faqAccordion">
+          <div class="premium-card rounded-2xl bg-surface-container-lowest overflow-hidden fade-in">
+            <button class="faq-toggle w-full px-8 py-6 flex justify-between items-center text-left focus:outline-none">
+              <span class="font-headline-sm text-headline-sm text-primary" style="font-family: 'EB Garamond', serif;">What is Vastu Consultation?</span>
+              <span class="material-symbols-outlined text-primary transition-transform duration-300 faq-icon">expand_more</span>
+            </button>
+            <div class="faq-content" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out;">
+              <p class="px-8 pb-6 font-body-md text-on-surface-variant">Vastu consultation is the process of analyzing a property layout based on ancient Indian architectural sciences to balance the five elements and optimize positive energy flow in your living or working space.</p>
+            </div>
+          </div>
+
+          <div class="premium-card rounded-2xl bg-surface-container-lowest overflow-hidden fade-in">
+            <button class="faq-toggle w-full px-8 py-6 flex justify-between items-center text-left focus:outline-none">
+              <span class="font-headline-sm text-headline-sm text-primary" style="font-family: 'EB Garamond', serif;">Do you offer online consultation?</span>
+              <span class="material-symbols-outlined text-primary transition-transform duration-300 faq-icon">expand_more</span>
+            </button>
+            <div class="faq-content" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out;">
+              <p class="px-8 pb-6 font-body-md text-on-surface-variant">Yes, we offer comprehensive online consultations via video call, analyzing your floor plans digitally with the same accuracy and attention to detail as an on-site visit.</p>
+            </div>
+          </div>
+
+          <div class="premium-card rounded-2xl bg-surface-container-lowest overflow-hidden fade-in">
+            <button class="faq-toggle w-full px-8 py-6 flex justify-between items-center text-left focus:outline-none">
+              <span class="font-headline-sm text-headline-sm text-primary" style="font-family: 'EB Garamond', serif;">How long does a consultation take?</span>
+              <span class="material-symbols-outlined text-primary transition-transform duration-300 faq-icon">expand_more</span>
+            </button>
+            <div class="faq-content" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out;">
+              <p class="px-8 pb-6 font-body-md text-on-surface-variant">A standard residential consultation usually takes 1-2 hours depending on the size of the property and the complexity of the issues. Commercial consultations may take longer.</p>
+            </div>
+          </div>
+
+          <div class="premium-card rounded-2xl bg-surface-container-lowest overflow-hidden fade-in">
+            <button class="faq-toggle w-full px-8 py-6 flex justify-between items-center text-left focus:outline-none">
+              <span class="font-headline-sm text-headline-sm text-primary" style="font-family: 'EB Garamond', serif;">Is Vastu applicable for apartments?</span>
+              <span class="material-symbols-outlined text-primary transition-transform duration-300 faq-icon">expand_more</span>
+            </button>
+            <div class="faq-content" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out;">
+              <p class="px-8 pb-6 font-body-md text-on-surface-variant">Absolutely. We specialize in apartment Vastu solutions that don't require demolition. Our remedies are subtle, effective, and work within the constraints of apartment living.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-24 px-6 bg-surface" id="contact">
+      <div class="max-w-[1200px] mx-auto">
+        <div class="bg-surface-container-low rounded-3xl p-8 md:p-16 shadow-xl border border-outline-variant/10 relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-96 h-96 bg-primary-container/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+          <div class="absolute bottom-0 left-0 w-80 h-80 bg-secondary-container/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2"></div>
+          <div class="relative z-10 flex flex-col lg:flex-row gap-12 items-center">
+            <div class="w-full lg:w-1/2 fade-in">
+              <span class="inline-block py-1 px-4 bg-primary-container/15 border border-primary-container/30 text-primary rounded-full font-label-md text-label-md uppercase tracking-widest mb-6">Get in Touch</span>
+              <h2 class="font-headline-xl text-headline-xl text-primary mb-6" style="font-family: 'EB Garamond', serif;">Ready to Harmonize Your Space?</h2>
+              <p class="font-body-lg text-body-lg text-on-surface-variant mb-8">Take the first step towards a more balanced and prosperous life. Our experts are ready to guide you.</p>
+              <div class="space-y-6">
+                <div class="flex items-center gap-5">
+                  <div class="w-14 h-14 rounded-full bg-primary-container/15 flex items-center justify-center flex-shrink-0">
+                    <span class="material-symbols-outlined text-primary text-[24px]" style="font-variation-settings: 'FILL' 1;">phone</span>
+                  </div>
+                  <div>
+                    <p class="font-label-md text-label-md text-on-surface-variant">WhatsApp / Phone</p>
+                    <a href="https://wa.me/917369917513" class="font-title-lg text-primary hover:text-primary/80 transition-colors">+91 73699 17513</a>
+                  </div>
+                </div>
+                <div class="flex items-center gap-5">
+                  <div class="w-14 h-14 rounded-full bg-secondary-container/15 flex items-center justify-center flex-shrink-0">
+                    <span class="material-symbols-outlined text-secondary text-[24px]" style="font-variation-settings: 'FILL' 1;">email</span>
+                  </div>
+                  <div>
+                    <p class="font-label-md text-label-md text-on-surface-variant">Email Address</p>
+                    <a href="mailto:info@vastupariwar.com" class="font-title-lg text-primary hover:text-primary/80 transition-colors">info@vastupariwar.com</a>
+                  </div>
+                </div>
+                <div class="flex items-center gap-5">
+                  <div class="w-14 h-14 rounded-full bg-tertiary-container/15 flex items-center justify-center flex-shrink-0">
+                    <span class="material-symbols-outlined text-tertiary text-[24px]" style="font-variation-settings: 'FILL' 1;">location_on</span>
+                  </div>
+                  <div>
+                    <p class="font-label-md text-label-md text-on-surface-variant">Office Address</p>
+                    <p class="font-title-lg text-primary">Mumbai, Maharashtra</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full lg:w-1/2 fade-in">
+              <form class="bg-surface p-8 rounded-2xl shadow-lg border border-outline-variant/10 space-y-5" id="contactForm">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                  <div>
+                    <label class="block font-label-md text-label-md text-on-surface-variant mb-2">Full Name</label>
+                    <input type="text" placeholder="Your Name" required class="w-full px-4 py-3 rounded-xl border border-outline-variant bg-surface-container-lowest focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all font-body-md" />
+                  </div>
+                  <div>
+                    <label class="block font-label-md text-label-md text-on-surface-variant mb-2">Phone Number</label>
+                    <input type="tel" placeholder="+91 98XXX XXXXX" required class="w-full px-4 py-3 rounded-xl border border-outline-variant bg-surface-container-lowest focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all font-body-md" />
+                  </div>
+                </div>
+                <div>
+                  <label class="block font-label-md text-label-md text-on-surface-variant mb-2">Email Address</label>
+                  <input type="email" placeholder="your@email.com" class="w-full px-4 py-3 rounded-xl border border-outline-variant bg-surface-container-lowest focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all font-body-md" />
+                </div>
+                <div>
+                  <label class="block font-label-md text-label-md text-on-surface-variant mb-2">Consultation Type</label>
+                  <select class="w-full px-4 py-3 rounded-xl border border-outline-variant bg-surface-container-lowest focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all font-body-md">
+                    <option value="">Select Type</option>
+                    <option>Residential Vastu</option>
+                    <option>Business Vastu</option>
+                    <option>Online Consultation</option>
+                    <option>Remedial Vastu</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="block font-label-md text-label-md text-on-surface-variant mb-2">Your Message</label>
+                  <textarea rows="4" placeholder="Tell us about your requirements..." class="w-full px-4 py-3 rounded-xl border border-outline-variant bg-surface-container-lowest focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all font-body-md resize-none"></textarea>
+                </div>
+                <button type="submit" class="w-full py-4 rounded-xl bg-primary text-on-primary font-label-md font-semibold shadow-lg hover:opacity-90 transition-all active:scale-[0.98] shimmer-btn">
+                  Submit Inquiry
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-surface-container-high border-t border-outline-variant/10 py-16 px-6">
+    <div class="max-w-[1200px] mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+        <div class="md:col-span-2">
+          <div class="flex items-center gap-3 mb-5">
+            <span class="material-symbols-outlined text-primary text-[28px]" style="font-variation-settings: 'FILL' 1;">temple_hindu</span>
+            <span style="font-family: 'EB Garamond', serif;" class="font-headline-lg text-headline-lg text-primary">VASTU PARIWAR</span>
+          </div>
+          <p class="font-body-md text-on-surface-variant max-w-md">Harmonizing Lives through Ancient Wisdom and Modern Architectural Precision. Creating spaces that nurture prosperity, peace, and well-being.</p>
+        </div>
+        <div>
+          <h4 class="font-label-md text-label-md text-primary uppercase tracking-widest mb-5">Quick Links</h4>
+          <nav class="flex flex-col gap-3">
+            <a href="#home" class="font-body-md text-on-surface-variant hover:text-primary transition-colors">Home</a>
+            <a href="#services" class="font-body-md text-on-surface-variant hover:text-primary transition-colors">Services</a>
+            <a href="#about" class="font-body-md text-on-surface-variant hover:text-primary transition-colors">About Us</a>
+            <a href="#contact" class="font-body-md text-on-surface-variant hover:text-primary transition-colors">Contact</a>
+          </nav>
+        </div>
+        <div>
+          <h4 class="font-label-md text-label-md text-primary uppercase tracking-widest mb-5">Services</h4>
+          <nav class="flex flex-col gap-3">
+            <a href="pages/services.html" class="font-body-md text-on-surface-variant hover:text-primary transition-colors">Residential Vastu</a>
+            <a href="pages/services.html" class="font-body-md text-on-surface-variant hover:text-primary transition-colors">Business Vastu</a>
+            <a href="pages/services.html" class="font-body-md text-on-surface-variant hover:text-primary transition-colors">Online Consultation</a>
+            <a href="pages/services.html" class="font-body-md text-on-surface-variant hover:text-primary transition-colors">On-Site Visit</a>
+          </nav>
+        </div>
+      </div>
+      <div class="border-t border-outline-variant/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="font-body-sm text-on-surface-variant/70">2026 Vastu Pariwar. All rights reserved.</p>
+        <div class="flex items-center gap-3">
+          <span class="font-body-sm text-on-surface-variant">info@vastupariwar.com</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp CTA -->
+  <a href="https://wa.me/917369917513" class="fixed bottom-6 right-6 z-40 w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:scale-110 active:scale-95 transition-transform" style="background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);" aria-label="Chat on WhatsApp">
+    <span class="material-symbols-outlined text-[32px] text-white" style="font-variation-settings: 'FILL' 1;">chat</span>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

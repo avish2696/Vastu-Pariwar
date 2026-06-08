@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>VASTU PARIWAR | Expert Vastu Guidance for Harmonious Living</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../css/style.css" />
+  <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-fixed": "#ffe088",
+                        "on-tertiary-fixed-variant": "#005316",
+                        "secondary": "#735c00",
+                        "surface-container-high": "#eae8e7",
+                        "error": "#ba1a1a",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-fixed": "#241a00",
+                        "tertiary-container": "#69c56c",
+                        "surface-container-low": "#f6f3f2",
+                        "surface": "#fbf9f8",
+                        "on-surface-variant": "#554336",
+                        "inverse-surface": "#303030",
+                        "on-error": "#ffffff",
+                        "surface-container-highest": "#e4e2e1",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-fixed": "#99f899",
+                        "error-container": "#ffdad6",
+                        "inverse-on-surface": "#f3f0f0",
+                        "on-tertiary-fixed": "#002105",
+                        "on-error-container": "#93000a",
+                        "on-secondary-container": "#745c00",
+                        "outline": "#887364",
+                        "surface-variant": "#e4e2e1",
+                        "surface-tint": "#8f4e00",
+                        "on-background": "#1b1c1c",
+                        "on-primary": "#ffffff",
+                        "primary-container": "#ff9933",
+                        "primary": "#8f4e00",
+                        "on-surface": "#1b1c1c",
+                        "outline-variant": "#dbc2b0",
+                        "on-tertiary-container": "#005015",
+                        "primary-fixed-dim": "#ffb77a",
+                        "tertiary-fixed-dim": "#7edb7f",
+                        "primary-fixed": "#ffdcc2",
+                        "surface-dim": "#dcd9d9",
+                        "on-primary-fixed": "#2e1500",
+                        "surface-container": "#f0eded",
+                        "surface-bright": "#fbf9f8",
+                        "secondary-fixed-dim": "#e9c349",
+                        "inverse-primary": "#ffb77a",
+                        "on-secondary-fixed-variant": "#574500",
+                        "on-primary-container": "#693800",
+                        "secondary-container": "#fed65b",
+                        "tertiary": "#016e21",
+                        "background": "#fbf9f8",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed-variant": "#6d3a00"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-max": "1200px",
+                        "margin-mobile": "20px",
+                        "stack-md": "32px",
+                        "gutter": "24px",
+                        "stack-sm": "16px",
+                        "stack-lg": "64px",
+                        "base": "8px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["EB Garamond", "serif"],
+                        "headline-lg-mobile": ["EB Garamond", "serif"],
+                        "body-lg": ["Plus Jakarta Sans", "sans-serif"],
+                        "headline-xl": ["EB Garamond", "serif"],
+                        "body-md": ["Plus Jakarta Sans", "sans-serif"],
+                        "label-md": ["Plus Jakarta Sans", "sans-serif"],
+                        "headline-lg": ["EB Garamond", "serif"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["28px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                        "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-xl": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "headline-lg": ["36px", {"lineHeight": "1.2", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-color: #fbf9f8;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .sunlight-shadow {
+            box-shadow: 0px 4px 20px rgba(51, 51, 51, 0.05);
+        }
+        .sunlight-shadow-hover:hover {
+            box-shadow: 0px 12px 32px rgba(212, 175, 55, 0.12);
+        }
+        .vastu-compass-lines {
+            background-image: radial-gradient(circle, rgba(143, 78, 0, 0.1) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+
+        /* Animation Styles */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .reveal {
+                transition: opacity 0.5s ease-in-out;
+                transform: none !important;
+            }
+            .animate-float {
+                animation: none !important;
+            }
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .animate-float {
+            animation: float 4s ease-in-out infinite;
+        }
+
+        .stagger-item {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .stagger-item.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="text-on-surface overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md shadow-sm">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter flex justify-between items-center h-20">
+<div class="flex items-center gap-2 cursor-pointer active:opacity-70">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="temple_hindu">temple_hindu</span>
+<span class="font-headline-lg text-headline-lg font-semibold text-primary">VASTU PARIWAR</span>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-primary font-bold border-b-2 border-primary pb-1 font-label-md text-label-md" href="#">Home</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 font-label-md text-label-md" href="#about">Consultation</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 font-label-md text-label-md" href="#services">Case Studies</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 font-label-md text-label-md" href="#faq">About Us</a>
+</nav>
+<button class="bg-primary-container text-on-primary-container px-6 py-3 rounded-lg font-label-md text-label-md font-bold sunlight-shadow hover:scale-105 transition-transform active:opacity-70 animate-float">
+            Consult Now
+        </button>
+</div>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[85vh] flex items-center overflow-hidden reveal">
+<div class="absolute inset-0 z-0">
+<img alt="Hero background" class="w-full h-full object-cover" src="../images/a_beautiful_modern_indian_house_exterior_at_dusk_warm_lighting_elegant_screen.png"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface/40 via-surface/30 to-surface/70"></div>
+</div>
+<div class="relative z-10 max-w-container-max mx-auto px-margin-mobile w-full">
+<div class="max-w-2xl space-y-stack-md">
+<span class="inline-block py-1 px-4 bg-secondary-container text-on-secondary-container rounded-full font-label-md text-label-md uppercase tracking-widest">Ancient Wisdom, Modern Harmony</span>
+<h1 class="font-headline-xl text-headline-xl md:text-6xl text-primary leading-tight">Transform Your Home with Expert Vastu Guidance</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Personalized Vastu Consultation for Peace, Prosperity, and Positive Living. Harmonizing your living spaces with cosmic energy flows.</p>
+<div class="flex flex-wrap gap-4 pt-4">
+<button class="bg-primary-container text-on-primary-container px-8 py-4 rounded-lg font-bold sunlight-shadow-hover transition-all flex items-center gap-2">
+                        Book Free Consultation
+                    </button>
+<a href="https://wa.me/917369917513" class="inline-flex items-center gap-2 px-8 py-4 bg-surface border-2 border-primary text-primary rounded-lg font-bold sunlight-shadow-hover transition-all active:scale-95">
+<span class="material-symbols-outlined" data-icon="chat">chat</span>
+                        WhatsApp Now
+                    </a>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-stack-lg bg-surface reveal" id="about">
+<div class="max-w-container-max mx-auto px-margin-mobile">
+<div class="grid md:grid-cols-2 gap-gutter items-center">
+<div class="relative">
+<div class="absolute -top-6 -left-6 w-32 h-32 bg-secondary-container/20 rounded-full blur-3xl"></div>
+<img alt="About Vastu Pariwar" class="rounded-xl sunlight-shadow w-full aspect-[4/3] object-cover" src="../images/vastu_pariwar_home_animated_screen.png"/>
+<div class="absolute -bottom-4 -right-4 bg-surface p-6 rounded-lg sunlight-shadow border border-outline-variant/20">
+<p class="text-primary font-headline-md text-headline-md italic">"Harmony is not just a layout, it's a way of life."</p>
+</div>
+</div>
+<div class="space-y-stack-md">
+<h2 class="font-headline-lg text-headline-lg text-primary">Our Mission &amp; Vision</h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">At Vastu Pariwar, we bridge the gap between ancient Vedic spatial science and modern architectural sensibilities. Our mission is to create living and working environments that vibrate with positive energy, fostering health, wealth, and spiritual well-being for every family.</p>
+<ul class="space-y-4">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary pt-1" data-icon="verified" style="font-variation-settings: 'FILL' 1;">verified</span>
+<div>
+<h4 class="font-bold text-on-surface">Scientific Approach</h4>
+<p class="text-sm text-on-surface-variant">We combine directional math with modern psychology of space.</p>
+</div>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary pt-1" data-icon="energy_savings_leaf" style="font-variation-settings: 'FILL' 1;">energy_savings_leaf</span>
+<div>
+<h4 class="font-bold text-on-surface">Prosperity Alignment</h4>
+<p class="text-sm text-on-surface-variant">Optimizing entryways and focal points for financial flow.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Bento Grid -->
+<section class="py-stack-lg bg-surface-container-low reveal" id="services">
+<div class="max-w-container-max mx-auto px-margin-mobile">
+<div class="text-center mb-stack-lg">
+<h2 class="font-headline-lg text-headline-lg text-primary">Our Vastu Solutions</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Tailored spatial alignments for every type of dwelling</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-6 gap-6 stagger-container">
+<div class="md:col-span-3 bg-surface p-8 rounded-xl border border-outline-variant/20 sunlight-shadow sunlight-shadow-hover transition-all group stagger-item">
+<span class="material-symbols-outlined text-primary text-4xl mb-4 block" data-icon="home">home</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Home Vastu</h3>
+<p class="text-on-surface-variant mt-2 mb-6">Complete layout analysis for independent villas and traditional houses to ensure structural harmony.</p>
+<button class="text-primary font-bold flex items-center gap-2 group-hover:gap-4 transition-all">Learn More <span class="material-symbols-outlined">arrow_forward</span></button>
+</div>
+<div class="md:col-span-3 bg-surface p-8 rounded-xl border border-outline-variant/20 sunlight-shadow sunlight-shadow-hover transition-all group stagger-item">
+<span class="material-symbols-outlined text-primary text-4xl mb-4 block" data-icon="apartment">apartment</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Apartment Vastu</h3>
+<p class="text-on-surface-variant mt-2 mb-6">Specific remedies for high-rise living where structural changes aren't always possible.</p>
+<button class="text-primary font-bold flex items-center gap-2 group-hover:gap-4 transition-all">Learn More <span class="material-symbols-outlined">arrow_forward</span></button>
+</div>
+<div class="md:col-span-2 bg-surface p-8 rounded-xl border border-outline-variant/20 sunlight-shadow sunlight-shadow-hover transition-all group stagger-item">
+<span class="material-symbols-outlined text-primary text-4xl mb-4 block" data-icon="store">store</span>
+<h3 class="font-bold text-lg text-on-surface">Business Vastu</h3>
+<p class="text-sm text-on-surface-variant mt-2">Boost productivity and profit in office and retail spaces.</p>
+</div>
+<div class="md:col-span-2 bg-surface p-8 rounded-xl border border-outline-variant/20 sunlight-shadow sunlight-shadow-hover transition-all group stagger-item">
+<span class="material-symbols-outlined text-primary text-4xl mb-4 block" data-icon="laptop_mac">laptop_mac</span>
+<h3 class="font-bold text-lg text-on-surface">Online Consulting</h3>
+<p class="text-sm text-on-surface-variant mt-2">Get expert advice anywhere in the world via video call.</p>
+</div>
+<div class="md:col-span-2 bg-surface p-8 rounded-xl border border-outline-variant/20 sunlight-shadow sunlight-shadow-hover transition-all group stagger-item">
+<span class="material-symbols-outlined text-primary text-4xl mb-4 block" data-icon="location_on">location_on</span>
+<h3 class="font-bold text-lg text-on-surface">On-Site Visit</h3>
+<p class="text-sm text-on-surface-variant mt-2">Physical mapping and energy scanning of your property.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- How It Works Timeline -->
+<section class="py-stack-lg vastu-compass-lines reveal">
+<div class="max-w-container-max mx-auto px-margin-mobile">
+<h2 class="font-headline-lg text-headline-lg text-primary text-center mb-stack-lg">Our Scientific Process</h2>
+<div class="relative space-y-12 stagger-container">
+<div class="absolute left-1/2 top-0 bottom-0 w-0.5 bg-outline-variant/30 hidden md:block"></div>
+<!-- Step 1 -->
+<div class="relative flex flex-col md:flex-row items-center justify-between group stagger-item">
+<div class="md:w-[45%] bg-surface p-6 rounded-xl sunlight-shadow border border-outline-variant/10 md:text-right">
+<h4 class="font-bold text-primary mb-1">Step 01: Initial Inquiry</h4>
+<p class="text-sm text-on-surface-variant">Share your property details and floor plans through our simple onboarding form.</p>
+</div>
+<div class="z-10 w-12 h-12 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center font-bold sunlight-shadow my-4 md:my-0">1</div>
+<div class="md:w-[45%]"></div>
+</div>
+<!-- Step 2 -->
+<div class="relative flex flex-col md:flex-row-reverse items-center justify-between group stagger-item">
+<div class="md:w-[45%] bg-surface p-6 rounded-xl sunlight-shadow border border-outline-variant/10">
+<h4 class="font-bold text-primary mb-1">Step 02: Space Analysis</h4>
+<p class="text-sm text-on-surface-variant">Our experts perform a detailed directional mapping and energy flow assessment.</p>
+</div>
+<div class="z-10 w-12 h-12 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center font-bold sunlight-shadow my-4 md:my-0">2</div>
+<div class="md:w-[45%]"></div>
+</div>
+<!-- Step 3 -->
+<div class="relative flex flex-col md:flex-row items-center justify-between group stagger-item">
+<div class="md:w-[45%] bg-surface p-6 rounded-xl sunlight-shadow border border-outline-variant/10 md:text-right">
+<h4 class="font-bold text-primary mb-1">Step 03: Expert Consultation</h4>
+<p class="text-sm text-on-surface-variant">One-on-one session explaining the findings and their impact on your life.</p>
+</div>
+<div class="z-10 w-12 h-12 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center font-bold sunlight-shadow my-4 md:my-0">3</div>
+<div class="md:w-[45%]"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-stack-lg bg-surface-container-highest/30 reveal">
+<div class="max-w-container-max mx-auto px-margin-mobile">
+<h2 class="font-headline-lg text-headline-lg text-primary text-center mb-stack-lg">Happy Families</h2>
+<div class="grid md:grid-cols-2 gap-gutter stagger-container">
+<div class="bg-surface p-10 rounded-2xl sunlight-shadow relative overflow-hidden stagger-item">
+<span class="absolute top-4 right-4 text-secondary/10 text-8xl font-serif">“</span>
+<div class="flex items-center gap-4 mb-6">
+<img alt="Testimonial User" class="w-16 h-16 rounded-full object-cover border-2 border-secondary" src="../images/vastu_pariwar_home_animated_screen.png"/>
+<div>
+<h4 class="font-bold">The Sharma Family</h4>
+<div class="flex text-secondary-container">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+</div>
+<p class="italic text-on-surface-variant">"Since implementing the minor corrections suggested by Vastu Pariwar, we've noticed a significant shift in the energy of our home. My business is flourishing and there's a newfound peace among us."</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Gallery Section -->
+<section class="py-stack-lg bg-surface reveal">
+<div class="max-w-container-max mx-auto px-margin-mobile">
+<h2 class="font-headline-lg text-headline-lg text-primary text-center mb-stack-lg">Harmony in Architecture</h2>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="col-span-2 row-span-2">
+<img alt="Gallery 1" class="w-full h-full object-cover rounded-xl sunlight-shadow hover:scale-[1.02] transition-transform" src="../images/vastu_pariwar_home_animated_screen.png"/>
+</div>
+<div class="aspect-square">
+<img alt="Gallery 2" class="w-full h-full object-cover rounded-xl" src="../images/vastu_pariwar_home_animated_screen.png"/>
+</div>
+<div class="aspect-square">
+<img alt="Gallery 3" class="w-full h-full object-cover rounded-xl" src="../images/vastu_pariwar_home_animated_screen.png"/>
+</div>
+<div class="col-span-2 h-48">
+<img alt="Gallery 4" class="w-full h-full object-cover rounded-xl" src="../images/vastu_pariwar_home_animated_screen.png"/>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="py-stack-lg bg-surface-container-low/50 reveal" id="faq">
+<div class="max-w-2xl mx-auto px-margin-mobile">
+<h2 class="font-headline-lg text-headline-lg text-primary text-center mb-stack-lg">Frequently Asked Questions</h2>
+<div class="space-y-4">
+<div class="bg-surface rounded-xl border border-outline-variant/30 overflow-hidden sunlight-shadow">
+<button class="w-full px-6 py-4 flex justify-between items-center text-left font-bold text-on-surface" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('span').classList.toggle('rotate-180')">
+                        What is Vastu Shastra exactly?
+                        <span class="material-symbols-outlined transition-transform">expand_more</span>
+</button>
+<div class="px-6 pb-4 text-on-surface-variant hidden">
+                        Vastu Shastra is an ancient Indian science of architecture and planning. It aims to harmonize the environment by aligning man-made structures with the five natural elements and cosmic energies.
+                    </div>
+</div>
+<div class="bg-surface rounded-xl border border-outline-variant/30 overflow-hidden sunlight-shadow">
+<button class="w-full px-6 py-4 flex justify-between items-center text-left font-bold text-on-surface" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('span').classList.toggle('rotate-180')">
+                        Do I need to break walls for Vastu correction?
+                        <span class="material-symbols-outlined transition-transform">expand_more</span>
+</button>
+<div class="px-6 pb-4 text-on-surface-variant hidden">
+                        Not necessarily. We specialize in 'No-Demolition Vastu' which uses colors, metals, crystals, and furniture realignment to balance energies without structural changes.
+                    </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-stack-lg bg-primary-fixed reveal">
+<div class="max-w-container-max mx-auto px-margin-mobile">
+<div class="bg-surface rounded-3xl sunlight-shadow p-stack-md md:p-stack-lg flex flex-col md:flex-row gap-gutter">
+<div class="md:w-1/2 space-y-6">
+<h2 class="font-headline-lg text-headline-lg text-primary">Let's Bring Harmony to Your Space</h2>
+<p class="text-on-surface-variant">Have a question or ready to start? Fill out the form and our Vastu consultant will reach out within 24 hours.</p>
+<div class="space-y-4 pt-4">
+<div class="flex items-center gap-4">
+<span class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-secondary-container" data-icon="call">call</span>
+</span>
+<span>+91 98765 43210</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-secondary-container" data-icon="mail">mail</span>
+</span>
+<span>consult@vastupariwar.com</span>
+</div>
+</div>
+</div>
+<form class="md:w-1/2 space-y-4">
+<div class="grid grid-cols-2 gap-4">
+<input class="w-full bg-surface-container-low border-b-2 border-outline-variant/30 focus:border-primary px-4 py-3 outline-none transition-colors" placeholder="Your Name" type="text"/>
+<input class="w-full bg-surface-container-low border-b-2 border-outline-variant/30 focus:border-primary px-4 py-3 outline-none transition-colors" placeholder="Phone Number" type="text"/>
+</div>
+<input class="w-full bg-surface-container-low border-b-2 border-outline-variant/30 focus:border-primary px-4 py-3 outline-none transition-colors" placeholder="Email Address" type="email"/>
+<select class="w-full bg-surface-container-low border-b-2 border-outline-variant/30 focus:border-primary px-4 py-3 outline-none transition-colors">
+<option>Interested in Home Vastu</option>
+<option>Office/Business Vastu</option>
+<option>Industrial Vastu</option>
+<option>General Consultation</option>
+</select>
+<textarea class="w-full bg-surface-container-low border-b-2 border-outline-variant/30 focus:border-primary px-4 py-3 outline-none transition-colors" placeholder="Tell us about your space..." rows="4"></textarea>
+<button class="w-full bg-primary-container text-on-primary-container font-bold py-4 rounded-xl sunlight-shadow hover:scale-[1.01] transition-all" type="submit">Submit Request</button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-highest dark:bg-surface-container-low w-full py-stack-lg border-t border-outline-variant/20">
+<div class="max-w-container-max mx-auto px-margin-mobile grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="space-y-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="temple_hindu">temple_hindu</span>
+<span class="font-headline-md text-headline-md text-primary font-bold">VASTU PARIWAR</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">© 2024 Vastu Pariwar. Harmonizing Lives through Ancient Wisdom. Registered Vedic Consultancy.</p>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<ul class="space-y-2">
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors font-medium" href="#">Services</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors font-medium" href="#">Vastu Compass</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors font-medium" href="#">Our Process</a></li>
+</ul>
+<ul class="space-y-2">
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors font-medium" href="#">Testimonials</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors font-medium" href="#">Contact Us</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="font-bold text-on-surface">Follow Our Journey</h4>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center hover:bg-secondary-container transition-colors" href="#">
+<span class="material-symbols-outlined text-primary" data-icon="public">public</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center hover:bg-secondary-container transition-colors" href="#">
+<span class="material-symbols-outlined text-primary" data-icon="video_library">video_library</span>
+</a>
+</div>
+<div class="pt-4">
+<p class="text-xs text-on-surface-variant uppercase tracking-tighter">Certified Vastu Practitioners Council</p>
+</div>
+</div>
+</div>
+</footer>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="fixed bottom-0 w-full md:hidden z-50 rounded-t-xl bg-surface/90 backdrop-blur-lg border-t border-outline-variant/20 shadow-[0px_-4px_20px_rgba(0,0,0,0.05)]">
+<div class="flex justify-around items-center h-16 px-margin-mobile">
+<a class="flex flex-col items-center text-primary transition-transform duration-200 active:scale-95 animate-float" href="https://wa.me/917369917513">
+<span class="material-symbols-outlined" data-icon="chat">chat</span>
+<span class="font-label-md text-[10px]">WhatsApp</span>
+</a>
+<a class="flex flex-col items-center text-on-surface-variant transition-transform duration-200 active:scale-95" href="#">
+<span class="material-symbols-outlined" data-icon="call">call</span>
+<span class="font-label-md text-[10px]">Call Now</span>
+</a>
+<a class="flex flex-col items-center text-on-surface-variant transition-transform duration-200 active:scale-95" href="#">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+<span class="font-label-md text-[10px]">Enquire</span>
+</a>
+</div>
+</nav>
+<!-- Floating Action Buttons (Desktop) -->
+<div class="fixed bottom-8 right-8 z-40 hidden md:flex flex-col gap-4">
+<a class="w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform animate-float" href="#" style="animation-delay: 0.5s;">
+<svg class="w-7 h-7 fill-current" viewbox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.417-.003 6.557-5.338 11.892-11.893 11.892-1.997-.001-3.951-.5-5.688-1.448l-6.305 1.652zm6.599-3.835c1.544.918 3.46 1.403 5.42 1.404h.002c5.445 0 9.876-4.43 9.879-9.88.001-2.64-1.03-5.122-2.903-6.997-1.872-1.875-4.355-2.908-6.998-2.909-5.444 0-9.877 4.43-9.88 9.88-.001 2.03.626 4.017 1.812 5.687l-.999 3.646 3.732-.979zm11.366-7.312c-.315-.158-1.86-.918-2.149-1.022-.289-.105-.499-.158-.71.158-.21.315-.814 1.022-1 1.235-.183.21-.367.237-.682.079-.315-.158-1.328-.49-2.53-1.562-.936-.836-1.567-1.868-1.75-2.183-.183-.315-.02-.486.138-.643.141-.142.315-.368.473-.551.158-.184.21-.315.315-.526.105-.21.053-.394-.026-.552-.079-.158-.71-1.71-.973-2.34-.256-.612-.516-.529-.71-.539-.183-.009-.393-.011-.604-.011s-.552.079-.841.394c-.289.315-1.104 1.078-1.104 2.629 0 1.551 1.13 3.05 1.288 3.26.158.21 2.221 3.391 5.378 4.754.752.325 1.338.519 1.796.663.755.24 1.442.207 1.984.126.604-.09 1.86-.761 2.122-1.472.263-.711.263-1.315.184-1.446-.079-.131-.289-.21-.604-.368z"></path></svg>
+</a>
+<a class="w-14 h-14 bg-primary text-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform animate-float" href="#" style="animation-delay: 1s;">
+<span class="material-symbols-outlined text-2xl" data-icon="call">call</span>
+</a>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Intersection Observer for scroll reveals
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { 
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px' 
+        });
+
+        // Initialize general reveals
+        document.querySelectorAll('.reveal').forEach(el => {
+            revealObserver.observe(el);
+        });
+
+        // Staggered reveals for containers
+        const staggerObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const items = entry.target.querySelectorAll('.stagger-item');
+                    items.forEach((item, index) => {
+                        setTimeout(() => {
+                            item.classList.add('active');
+                        }, index * 150);
+                    });
+                    staggerObserver.unobserve(entry.target);
+                }
+            });
+        }, { 
+            threshold: 0.2 
+        });
+
+        document.querySelectorAll('.stagger-container').forEach(container => {
+            staggerObserver.observe(container);
+        });
+    });
+</script>
+</body></html>
